@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Form </title>
+    <style>
+      label {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form >
+        <!--Insert email-->
+        <label for="email">Insert Email:</label>
+        <input id="email" type="email" placeholder="example@gmail.com" >
+        <!--Insert password-->
+        <label for="password">Insert password:</label>
+        <input id="password" type="password" minlength="6" maxlength="16">
+        <!--Insert name-->
+        <label for="name">Insert name:</label>
+        <input id="name" name="name" minlength="2" maxlength="20" placeholder="E.g Ruben">
+        <!--Insert last name-->
+        <label for="last name">Insert Last name:</label>
+        <input id="last_name" name="last_name" maxlength="25" placeholder="E.g. Cirelli">
+        <!--Insert date-->
+        <label for="date">Date of birth</label>
+        <input id="date" type="date" name="date">
+        <!--Insert phone number-->
+        <label for="phone">Enter your phone number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="1234567890" maxlength="10"><br>
+        <!--Insert sub_plan-->
+        <label for="sub_plan">Choose your plan: </label>
+        <select name="sub" id="sub_plan">
+        <option value="free">Free</option>
+        <option value="base">Base ($10)</option>
+        <option value="silver">Silver ($15)</option>
+        <option value="gold">Gold ($20)</option></select>
+        <br><br>
+        <!--Insert pro plan-->
+        <label for="pro_plan">Do you wanna include pro plan?</label>
+        <input type="checkbox" name="pro_plan" value="agreed"><br>
+        <!--Insert credit card-->
+        <label for="credit_card">insert credit card</label>
+        <input type="text" id="credit_card" name="credit_card" pattern="[0-9]+" placeholder="2222-2222-2222-2222" maxlength="16"><br>
+        <!--Insert credit card-->
+        <label for="CVC">insert CVC</label>
+        <input type="text" id="CVC" name="CVC" pattern="[0-9]+" placeholder="123" maxlength="3"><br>
+        <!--Insert expiration date-->
+        Expiration date<br>
+        <select name='expireMM' id='expireMM'>
+        <option value=''>Month</option>
+        <option value='01'>January</option>
+        <option value='02'>February</option>
+        <option value='03'>March</option>
+        <option value='04'>April</option>
+        <option value='05'>May</option>
+        <option value='06'>June</option>
+        <option value='07'>July</option>
+        <option value='08'>August</option>
+        <option value='09'>September</option>
+        <option value='10'>October</option>
+        <option value='11'>November</option>
+        <option value='12'>December</option>
+        </select> 
+        <select name='expireYY' id='expireYY'>
+        <option value=''>Year</option>
+        <option value='23'>2023</option>
+        <option value='24'>2024</option>
+        <option value='25'>2025</option>
+        <option value='26'>2026</option>
+        <option value='27'>2027</option>
+        </select> 
+        <input type="hidden" name="expiry" id="expiry" maxlength="4"/>
+        <!--Insert address-->
+        <label for="address">Insert Address</label>
+        <input type="text" id="address" name="address"><br><br>
+        <button>Submit</button>
+    </form>
+  </body>
+</html>
